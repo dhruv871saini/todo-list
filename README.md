@@ -97,11 +97,13 @@ npm start
 - Tailwind CSS (Optional)
 - React Router
 - Axios
+-React-hot-toast
 
 ### 🔥 Backend:
 - Node.js
 - Express.js
 - MongoDB + Mongoose
+- Bcryptjs 
 - JSON Web Token (JWT)
 
 ## 📜 License
