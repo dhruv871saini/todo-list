@@ -112,7 +112,7 @@ Contributions are welcome! If you’d like to contribute, please fork the reposi
 
 ## 📬 Contact
 For any questions or feedback, feel free to reach out:
-- Email: your-email@example.com
-- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/yourprofile)
-- GitHub: [Your GitHub](https://github.com/your-username)
+- Email: dhruvsaini871@gmail.com
+- LinkedIn: [ LinkedIn](https://www.linkedin.com/in/dhruv-saini-a88482241/)
+- GitHub: [ GitHub](https://github.com/dhruv871saini)
 
