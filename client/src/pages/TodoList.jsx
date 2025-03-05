@@ -7,14 +7,13 @@ import { useNavigate } from "react-router-dom";
 
 const TodoList = () => {
   const [tasks, setTasks] = useState([]);
-  const [filter, setFilter] = useState("all"); // ✅ Task filter
+  const [filter, setFilter] = useState("all");
   const navigate = useNavigate();
 
   useEffect(() => {
     fetchTasks();
   }, []);
 
-  // ✅ Fetch tasks from API
   const fetchTasks = async () => {
     try {
       const res = await axios.get("http://localhost:5000/api/tasks", {
@@ -26,13 +25,11 @@ const TodoList = () => {
     }
   };
 
-  // ✅ Logout and navigate to login page
   const handleLogout = () => {
     localStorage.removeItem("token");
     navigate("/login");
   };
 
-  // ✅ Filter Tasks Based on Status
   const filteredTasks = tasks.filter((task) => {
     if (filter === "completed") return task.completed;
     if (filter === "pending") return !task.completed;
@@ -48,7 +45,6 @@ const TodoList = () => {
         </button>
       </div>
 
-      {/* ✅ Task Filtering */}
       <div className="mb-4 flex justify-between">
         <TaskForm fetchTasks={fetchTasks} />
         <select
@@ -62,7 +58,6 @@ const TodoList = () => {
         </select>
       </div>
 
-      {/* ✅ Standard Task List */}
       <ul className="space-y-3">
         {filteredTasks.length === 0 ? (
           <p className="text-gray-500 dark:text-gray-300 text-center">No tasks found.</p>

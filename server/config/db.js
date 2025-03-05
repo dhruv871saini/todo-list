@@ -9,10 +9,10 @@ const db = async () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
-    console.log("✅ Database connected successfully");
+    console.log(" Database connected successfully");
   } catch (error) {
-    console.error("❌ Cannot connect to the database:", error);
-    process.exit(1); // Exit process with failure
+    console.error(" Cannot connect to the database:", error);
+    process.exit(1); 
   }
 };
 
