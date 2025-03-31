@@ -32,15 +32,6 @@ npm install
 cd ../client
 npm install
 ```
-
-### 3️⃣ Environment Variables Setup
-Create a `.env` file in the `/server` directory and add the following:
-```env
-MONGO_URI= mongodb+srv://gouravsaini:L10IaR10RHLUEhOQ@cluster0.pk3q9.mongodb.net/practice?retryWrites=true&w=majority
-JWT_SECRET=dkdjfkjjdkjfkj
-PORT=5000
-```
-
 ### 4️⃣ Start the Application
 #### Start the Backend Server
 ```bash
