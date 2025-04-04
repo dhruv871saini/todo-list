@@ -9,7 +9,11 @@ const _dirname =path.resolve()
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+const corsOption={
+    origin:"https://todo-list-onl4.onrender.com",
+    credentials:true
+}
+app.use(cors(corsOption));
 
 app.use('/api/auth', authRoutes);
 app.use('/api', taskRoutes);

@@ -10,7 +10,7 @@ const TaskItem = ({ task, fetchTasks }) => {
   const handleToggleComplete = async () => {
     try {
       await axios.put(
-        `http://localhost:5000/api/tasks/${task._id}`,
+        `https://todo-list-onl4.onrender.com/api/tasks/${task._id}`,
         { completed: !task.completed },
         { headers: { "x-auth-token": localStorage.getItem("token") } }
       );
@@ -23,7 +23,7 @@ const TaskItem = ({ task, fetchTasks }) => {
 
   const handleDeleteTask = async () => {
     try {
-      await axios.delete(`http://localhost:5000/api/tasks/${task._id}`, {
+      await axios.delete(`https://todo-list-onl4.onrender.com/api/tasks/${task._id}`, {
         headers: { "x-auth-token": localStorage.getItem("token") },
       });
       toast.success(" Task deleted successfully!");
@@ -36,7 +36,7 @@ const TaskItem = ({ task, fetchTasks }) => {
   const handleEditTask = async () => {
     try {
       await axios.put(
-        `http://localhost:5000/api/tasks/${task._id}`,
+        `https://todo-list-onl4.onrender.com/api/tasks/${task._id}`,
         { title: newTitle, dueDate },
         { headers: { "x-auth-token": localStorage.getItem("token") } }
       );

@@ -10,7 +10,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", user);
+      const res = await axios.post("https://todo-list-onl4.onrender.com/api/auth/login", user);
       localStorage.setItem("token", res.data.token);
       
       toast.success(res.data.message || "Login successful!");
