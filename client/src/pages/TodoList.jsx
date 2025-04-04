@@ -21,7 +21,7 @@ const TodoList = () => {
       });
       setTasks(res.data);
     } catch (error) {
-      toast.error(error.response?.data?.message || "❌ Something went wrong!");
+      toast.error(error.response?.data?.message || " Something went wrong!");
     }
   };
 
@@ -39,7 +39,7 @@ const TodoList = () => {
   return (
     <div className="container mx-auto max-w-2xl p-4">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">📌 My Tasks</h2>
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white"> My Tasks</h2>
         <button onClick={handleLogout} className="bg-red-500 dark:bg-red-700 px-4 py-2 rounded text-white">
           Logout
         </button>

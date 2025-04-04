@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 const TaskItem = ({ task, fetchTasks }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [newTitle, setNewTitle] = useState(task.title);
-  const [dueDate, setDueDate] = useState(task.dueDate ? task.dueDate.split("T")[0] : ""); // ✅ Format date
+  const [dueDate, setDueDate] = useState(task.dueDate ? task.dueDate.split("T")[0] : ""); 
 
   const handleToggleComplete = async () => {
     try {
