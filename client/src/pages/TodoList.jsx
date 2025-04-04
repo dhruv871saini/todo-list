@@ -16,7 +16,7 @@ const TodoList = () => {
 
   const fetchTasks = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/tasks", {
+      const res = await axios.get("https://todo-list-onl4.onrender.com/api/tasks", {
         headers: { "x-auth-token": localStorage.getItem("token") },
       });
       setTasks(res.data);
